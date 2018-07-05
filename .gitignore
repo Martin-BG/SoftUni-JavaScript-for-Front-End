@@ -6,14 +6,10 @@
 *.7z
 *.rar
 
-text.txt
-
 ### IntelliJ IDEA ###
 **/out/
 **/target/
-**/.idea/*
-#!**/.idea/misc.xml
-#!**/.idea/modules.xml
+**/.idea/
 *.iws
 *.iml
 *.ipr
