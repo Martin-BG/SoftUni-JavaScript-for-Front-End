@@ -1,8 +1,8 @@
 function addItem() {
-    var regex1 = new RegExp("^\s*$");
+    let empty = new RegExp("^\s*$");
     let itemText = document.getElementById("newItemText").value;
     let itemValue = document.getElementById("newItemValue").value;
-    if (regex1.test(itemText) || regex1.test(itemValue)) {
+    if (empty.test(itemText) || empty.test(itemValue)) {
         return;
     }
     document.getElementById("newItemText").value = "";

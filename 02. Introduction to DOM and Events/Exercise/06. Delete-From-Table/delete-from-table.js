@@ -1,5 +1,9 @@
 function deleteByEmail() {
+    let empty = new RegExp("^\s*$");
     let email = document.getElementsByTagName("input")[0].value;
+    if (empty.test(email)) {
+        return;
+    }
     document.getElementsByTagName("input")[0].value = "";
     document.getElementById("result").textContent = "Not found.";
     let rows = document.getElementsByTagName("tr");
