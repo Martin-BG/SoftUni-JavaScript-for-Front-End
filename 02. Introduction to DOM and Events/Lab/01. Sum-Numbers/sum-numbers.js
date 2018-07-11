@@ -4,4 +4,5 @@ function calc() {
     document.getElementById("sum").value = num1 + num2;
     // document.getElementsByTagName("input")[2].value = num1 + num2;
     // document.querySelectorAll("input")[2].value = num1 + num2;
+    // document.querySelector("input:nth-child(3)").value = num1 + num2;
 }
