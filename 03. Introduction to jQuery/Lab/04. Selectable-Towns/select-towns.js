@@ -6,20 +6,19 @@ function attachEvents() {
         $("#selectedTowns").text(
             $("#items li")
                 .toArray()
-                .filter(li => typeof $(li).attr("data-selected") !== typeof undefined && $(li).attr("data-selected") === "true")
+                .filter(li => $(li).is("[data-selected]"))
                 .map(li => li.textContent)
                 .join(", ")
         );
     }
 
     function onListItemClick() {
-        let attr = $(this).attr("data-selected");
-        if (typeof attr !== typeof undefined && attr === "true") {
+        if ($(this).is("[data-selected]")) {
             $(this).removeAttr("data-selected");
-            $(this).css("color", "");
+            $(this).css("background", "");
         } else {
             $(this).attr("data-selected", "true");
-            $(this).css("color", "#DDD");
+            $(this).css("background", "#DDD");
         }
     }
 }
