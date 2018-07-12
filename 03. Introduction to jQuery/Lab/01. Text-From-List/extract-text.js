@@ -5,3 +5,12 @@ function extractText() {
         .map(e => result.push(e.textContent));
     $("#result").text(result.join(", "));
 }
+
+function extractTextAnoter() {
+    $("#result").text(
+        $("#items li")
+            .toArray()
+            .map(li => li.textContent)
+            .join(", ")
+    );
+}
