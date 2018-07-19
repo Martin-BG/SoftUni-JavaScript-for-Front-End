@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Gaegu', cursive;
+}
+
+img {
+    max-width: 100%;
+}

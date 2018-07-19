@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle');
+
+body {
+    font-family: 'News Cycle', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 15px;
+}
