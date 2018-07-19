@@ -1,1 +1,3 @@
-// TODO: Implement me
+$.validate({
+    modules: 'security'
+});
