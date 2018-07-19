@@ -7,5 +7,26 @@ header {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
+    margin: auto;
+    opacity: 0.5;
+}
+
+#cats {
+    width: 80%;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+    text-align: -webkit-center;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color: black;
+}
+
+img:hover {
+    opacity: unset;
 }
