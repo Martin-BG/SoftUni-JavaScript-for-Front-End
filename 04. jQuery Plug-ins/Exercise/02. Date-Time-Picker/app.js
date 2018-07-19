@@ -1,1 +1,1 @@
-// TODO: Implement me
+$('#producedOn').datetimepicker();
