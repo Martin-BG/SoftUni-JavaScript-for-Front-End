@@ -20,6 +20,7 @@ function loadRepos() {
 
     function displayError(err) {
         $("#repos")
-            .append($("<li>Error</li>"));
+            .append($("<li>")
+                .text(`Error: ${err.responseJSON.message}`));
     }
 }
