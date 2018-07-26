@@ -20,7 +20,8 @@
             <label for="username">Username</label>
             <input id="username" type="text" class="form-control" placeholder="Username..."
                    data-validation="alphanumeric length"
-                   data-validation-length="3-12">
+                   data-validation-length="3-12"
+                   data-validation-error-msg="The username should only contain 3-12 alphanumeric characters.">
         </div>
 
         <div class="password-group form-group">
@@ -29,7 +30,7 @@
                    data-validation="strength length"
                    data-validation-strength="3"
                    data-validation-length="6-20"
-                   data-validation-error-msg="The username should only contain 6-20 characters.">
+                   data-validation-error-msg="Password should only contain 6-20 characters.">
         </div>
 
         <div class="email-group form-group">
