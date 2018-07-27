@@ -1,1 +1,3 @@
-// TODO: Implement me
+$(document).ready(function () {
+    $('#table').dataTable();
+});
