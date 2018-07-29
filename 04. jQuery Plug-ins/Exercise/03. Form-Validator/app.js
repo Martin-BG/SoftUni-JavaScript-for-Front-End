@@ -1,11 +1,11 @@
 $.validate({
-    modules: 'security'
+    modules: "security"
 });
 
-$('#bold-btn').on('click', () => {
-    $('#format-text input').toggleClass('text-bold')
+$("#bold-btn").on("click", () => {
+    $("#format-text input").toggleClass("text-bold");
 });
 
-$('#italic-btn').on('click', () => {
-    $('#format-text input').toggleClass('text-italic')
+$("#italic-btn").on("click", () => {
+    $("#format-text input").toggleClass("text-italic");
 });
