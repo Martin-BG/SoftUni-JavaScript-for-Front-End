@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <title>Collapse</title>
+</head>
+<body>
+<div class="container jumbotron">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header bg-info" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-white font-weight-bold" type="button" data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                        HTML
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Hypertext Markup Language is the standard markup language for creating web pages and web
+                    applications.
+                    With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the
+                    World
+                    Wide Web.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-info" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-white font-weight-bold" type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                        CSS
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Cascading Style Sheets is a style sheet language used for describing the presentation of a document
+                    written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web,
+                    alongside
+                    HTML and JavaScript.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-info" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-white font-weight-bold" type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                        Bootstrap
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Bootstrap is a free and open-source front-end framework (library) for designing websites and web
+                    applications. It contains HTML- and CSS-based design templates for typography, forms, buttons,
+                    navigation and other interface components, as well as optional JavaScript extensions. Unlike many
+                    web
+                    frameworks, it concerns itself with front-end development only.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</html>
