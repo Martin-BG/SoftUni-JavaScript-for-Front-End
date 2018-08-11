@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Horizon</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<header class="bg-dark">
+    <h1 class="h1 text-white text-center p-3">
+        Log Horizon
+    </h1>
+</header>
+
+<main>
+    <section class="row py-4">
+        <form class="form-inline m-auto mx-5">
+            <div class="form-group mx-sm-3 mb-2" id="settedUsername">
+                <input type="text" class="form-control" id="usernameInput" placeholder="Username...">
+            </div>
+            <button type="button" class="btn btn-dark mb-2" id="setUsername">Set Username</button>
+        </form>
+    </section>
+
+    <hr class="hr bg-dark" style="height: 2px">
+
+
+    <h2 class="h2 text-center p-1 pb-3">
+        Log a Message
+    </h2>
+
+    <div class="container">
+        <section class="row pb-3">
+            <div class="form-group mx-sm-3 mb-2 col-6">
+                <input type="text" class="form-control" id="message" placeholder="Message...">
+            </div>
+
+            <button type="button" class="btn btn-outline-success ">
+                <input type="radio" name="blankRadio" id="successBtn">
+                Success
+            </button>
+
+            <button type="button" class="btn btn-outline-info mx-3 pr-4">
+                <input type="radio" name="blankRadio" id="infoBtn" checked>
+                Info
+            </button>
+
+            <button type="button" class="btn btn-outline-danger pr-4">
+                <input type="radio" name="blankRadio" id="errorBtn">
+                Error
+            </button>
+
+            <div class="border-left ml-5 border-dark">
+                <button id="logBtn" class="btn btn-dark ml-4 pr-4">
+                    Log
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <hr class="hr bg-dark" style="height: 2px">
+
+    <h2 class="h2 text-center p-1 pb-3">
+        Log a Message
+    </h2>
+
+    <div id="logs" class="container">
+        <h2 class="h2 text-center p-1 pb-3 text-secondary" id="emptyDb">
+            They are currently no logs in database...
+        </h2>
+    </div>
+
+</main>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
