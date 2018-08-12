@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>TITLE</title>
+    <title>Profile</title>
 
     <link rel="stylesheet" href="css/bootstrap-4.1.3.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,23 +19,27 @@
         <h3 class="h3 text-danger text-center">Personal Info</h3>
         <div class="row">
             <div class="form-group col-6 text-center">
-                <h6 class="h6 text-danger text-center font-weight-bold mb-0">First Name</h6>
-                <input type="text" class="form-control-plaintext text-center text-dark h4" id="firstName" value="Pesho">
+                <label for="firstName" class="h6 text-danger text-center font-weight-bold mb-0">First Name</label>
+                <input type="text" readonly class="form-control-plaintext text-center text-dark h4 pt-0" id="firstName"
+                       name="firstName" value="Pesho">
             </div>
             <div class="form-group col-6 text-center">
-                <h6 class="h6 text-danger font-weight-bold mb-0">Last Name</h6>
-                <input type="text" class="form-control-plaintext text-center text-dark h4" id="lastName" value="Peshov">
+                <label for="lastName" class="h6 text-danger font-weight-bold mb-0">Last Name</label>
+                <input type="text" readonly class="form-control-plaintext text-center text-dark h4 pt-0" id="lastName"
+                       name="lastName" value="Peshov">
             </div>
         </div>
         <div class="row mb-2 mt-0">
             <div class="form-group col-6 text-center">
-                <h6 class="h6 text-danger text-center font-weight-bold mb-0">Phone Number</h6>
-                <input type="text" class="form-control-plaintext text-center text-dark h4" id="phoneNumber"
+                <label for="phoneNumber" class="h6 text-danger text-center font-weight-bold">Phone Number</label>
+                <input type="text" readonly class="form-control-plaintext text-center text-dark h4 pt-0"
+                       id="phoneNumber" name="phoneNumber"
                        value="555-333-4545">
             </div>
             <div class="form-group col-6 text-center">
-                <h6 class="h6 text-danger text-center font-weight-bold mb-0">UCL</h6>
-                <input type="text" class="form-control-plaintext text-center text-dark h4" id="ucl" value="9311124003">
+                <label for="ucl" class="h6 text-danger text-center font-weight-bold mb-0">UCL</label>
+                <input type="number" readonly class="form-control-plaintext text-center text-dark h4 pt-0" id="ucl"
+                       name="ucl" value="9311124003">
             </div>
         </div>
         <hr class="hr bg-danger" style="height: 2px">
@@ -45,41 +49,44 @@
         <div class="container">
             <form class="d-flex justify-content-between">
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4">Support
+                    <input type="radio" name="teamRadio" id="support" class="mr-4">Support
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4">CRM
+                    <input type="radio" name="teamRadio" id="crm" class="mr-4">CRM
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4">Marketing
+                    <input type="radio" name="teamRadio" id="marketing" class="mr-4">Marketing
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4">Development
+                    <input type="radio" name="teamRadio" id="development" class="mr-4">Development
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4" checked>Other
+                    <input type="radio" name="teamRadio" id="other" class="mr-4" checked>Other
                 </label>
             </form>
         </div>
         <hr class="hr bg-danger w-50 my-4" style="height: 2px">
-        <div class="container w-75">
-            <form class="d-flex justify-content-between">
+        <div class="container">
+            <form class="d-flex justify-content-around">
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4">Team Lead
+                    <input type="radio" name="positionRadio" id="senior" class="mr-4">
+                    <span>Team Lead</span>
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4" checked>Regular Employee
+                    <input type="radio" name="positionRadio" id="regular" class="mr-4">
+                    <span>Regular Employee</span>
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio" class="mr-4">Intern
+                    <input type="radio" name="positionRadio" id="junior" class="mr-4">
+                    <span>Intern</span>
                 </label>
             </form>
         </div>
         <hr class="hr bg-danger my-4" style="height: 2px">
     </section>
     <div class="container w-25 d-flex justify-content-between">
-        <button type="button" class="btn btn-danger">Submit</button>
-        <button type="button" class="btn btn-danger">Reset</button>
+        <button type="button" class="btn btn-danger" id="submitBtn">Submit</button>
+        <button type="button" class="btn btn-danger" id="resetBtn">Reset</button>
     </div>
 </main>
 
